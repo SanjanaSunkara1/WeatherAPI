@@ -46,16 +46,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmWeatherAPI.cs">
+    <Compile Include="Models\APIKeys.cs" />
+    <Compile Include="Models\URLs.cs" />
+    <Compile Include="Models\Weather.cs" />
+    <Compile Include="Processes\ConvertTemperatures.cs" />
+    <Compile Include="Processes\ParseWeatherDataJSON.cs" />
+    <Compile Include="Processes\ParseWeatherDataXML.cs" />
+    <Compile Include="WeatherAPIForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmWeatherAPI.Designer.cs">
-      <DependentUpon>frmWeatherAPI.cs</DependentUpon>
+    <Compile Include="WeatherAPIForm.Designer.cs">
+      <DependentUpon>WeatherAPIForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmWeatherAPI.resx">
-      <DependentUpon>frmWeatherAPI.cs</DependentUpon>
+    <EmbeddedResource Include="WeatherAPIForm.resx">
+      <DependentUpon>WeatherAPIForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -78,6 +84,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -48,8 +48,8 @@
             this.lowTxt = new System.Windows.Forms.TextBox();
             this.windLabel = new System.Windows.Forms.Label();
             this.cloudsLabel = new System.Windows.Forms.Label();
-            this.windTxt = new System.Windows.Forms.TextBox();
             this.cloudsTxt = new System.Windows.Forms.TextBox();
+            this.windTxt = new System.Windows.Forms.TextBox();
             this.closeBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -113,6 +113,7 @@
             // cityTxt
             // 
             this.cityTxt.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.cityTxt.Enabled = false;
             this.cityTxt.Location = new System.Drawing.Point(25, 151);
             this.cityTxt.Name = "cityTxt";
             this.cityTxt.ReadOnly = true;
@@ -146,6 +147,7 @@
             // latTxt
             // 
             this.latTxt.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.latTxt.Enabled = false;
             this.latTxt.Location = new System.Drawing.Point(25, 232);
             this.latTxt.Name = "latTxt";
             this.latTxt.ReadOnly = true;
@@ -155,6 +157,7 @@
             // longTxt
             // 
             this.longTxt.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.longTxt.Enabled = false;
             this.longTxt.Location = new System.Drawing.Point(251, 232);
             this.longTxt.Name = "longTxt";
             this.longTxt.ReadOnly = true;
@@ -213,6 +216,7 @@
             // tempTxt
             // 
             this.tempTxt.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.tempTxt.Enabled = false;
             this.tempTxt.Location = new System.Drawing.Point(25, 314);
             this.tempTxt.Name = "tempTxt";
             this.tempTxt.ReadOnly = true;
@@ -222,6 +226,7 @@
             // feelsikeTxt
             // 
             this.feelsikeTxt.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.feelsikeTxt.Enabled = false;
             this.feelsikeTxt.Location = new System.Drawing.Point(374, 314);
             this.feelsikeTxt.Name = "feelsikeTxt";
             this.feelsikeTxt.ReadOnly = true;
@@ -231,6 +236,7 @@
             // highTxt
             // 
             this.highTxt.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.highTxt.Enabled = false;
             this.highTxt.Location = new System.Drawing.Point(273, 314);
             this.highTxt.Name = "highTxt";
             this.highTxt.ReadOnly = true;
@@ -240,6 +246,7 @@
             // lowTxt
             // 
             this.lowTxt.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lowTxt.Enabled = false;
             this.lowTxt.Location = new System.Drawing.Point(171, 314);
             this.lowTxt.Name = "lowTxt";
             this.lowTxt.ReadOnly = true;
@@ -252,7 +259,7 @@
             this.windLabel.BackColor = System.Drawing.Color.Transparent;
             this.windLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.windLabel.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.windLabel.Location = new System.Drawing.Point(21, 358);
+            this.windLabel.Location = new System.Drawing.Point(247, 358);
             this.windLabel.Name = "windLabel";
             this.windLabel.Size = new System.Drawing.Size(58, 24);
             this.windLabel.TabIndex = 19;
@@ -265,29 +272,31 @@
             this.cloudsLabel.BackColor = System.Drawing.Color.Transparent;
             this.cloudsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cloudsLabel.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.cloudsLabel.Location = new System.Drawing.Point(247, 358);
+            this.cloudsLabel.Location = new System.Drawing.Point(21, 358);
             this.cloudsLabel.Name = "cloudsLabel";
             this.cloudsLabel.Size = new System.Drawing.Size(75, 24);
             this.cloudsLabel.TabIndex = 20;
             this.cloudsLabel.Text = "Clouds";
             // 
-            // windTxt
-            // 
-            this.windTxt.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.windTxt.Location = new System.Drawing.Point(25, 396);
-            this.windTxt.Name = "windTxt";
-            this.windTxt.ReadOnly = true;
-            this.windTxt.Size = new System.Drawing.Size(203, 20);
-            this.windTxt.TabIndex = 21;
-            // 
             // cloudsTxt
             // 
             this.cloudsTxt.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.cloudsTxt.Location = new System.Drawing.Point(251, 396);
+            this.cloudsTxt.Enabled = false;
+            this.cloudsTxt.Location = new System.Drawing.Point(25, 396);
             this.cloudsTxt.Name = "cloudsTxt";
             this.cloudsTxt.ReadOnly = true;
             this.cloudsTxt.Size = new System.Drawing.Size(203, 20);
-            this.cloudsTxt.TabIndex = 22;
+            this.cloudsTxt.TabIndex = 21;
+            // 
+            // windTxt
+            // 
+            this.windTxt.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.windTxt.Enabled = false;
+            this.windTxt.Location = new System.Drawing.Point(251, 396);
+            this.windTxt.Name = "windTxt";
+            this.windTxt.ReadOnly = true;
+            this.windTxt.Size = new System.Drawing.Size(203, 20);
+            this.windTxt.TabIndex = 22;
             // 
             // closeBtn
             // 
@@ -300,6 +309,7 @@
             this.closeBtn.TabIndex = 23;
             this.closeBtn.Text = "close";
             this.closeBtn.UseVisualStyleBackColor = false;
+            this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
             // 
             // frmWeatherAPI
             // 
@@ -307,8 +317,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(511, 597);
             this.Controls.Add(this.closeBtn);
-            this.Controls.Add(this.cloudsTxt);
             this.Controls.Add(this.windTxt);
+            this.Controls.Add(this.cloudsTxt);
             this.Controls.Add(this.cloudsLabel);
             this.Controls.Add(this.windLabel);
             this.Controls.Add(this.lowTxt);
@@ -330,7 +340,7 @@
             this.Controls.Add(this.getWeatherJsonBtn);
             this.Controls.Add(this.getWeatherXmlBtn);
             this.Name = "frmWeatherAPI";
-            this.Text = "frmWeatherAPI";
+            this.Text = "Weather API";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -358,8 +368,8 @@
         private System.Windows.Forms.TextBox lowTxt;
         private System.Windows.Forms.Label windLabel;
         private System.Windows.Forms.Label cloudsLabel;
-        private System.Windows.Forms.TextBox windTxt;
         private System.Windows.Forms.TextBox cloudsTxt;
+        private System.Windows.Forms.TextBox windTxt;
         private System.Windows.Forms.Button closeBtn;
     }
 }
