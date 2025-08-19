@@ -47,11 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\APIKeys.cs" />
-    <Compile Include="Models\URLs.cs" />
     <Compile Include="Models\Weather.cs" />
-    <Compile Include="Processes\ConvertTemperatures.cs" />
-    <Compile Include="Processes\ParseWeatherDataJSON.cs" />
+    <Compile Include="Models\URLs.cs" />
     <Compile Include="Processes\ParseWeatherDataXML.cs" />
+    <Compile Include="Processes\ParseWeatherDataJSON.cs" />
+    <Compile Include="Processes\ConvertTemperatures.cs" />
     <Compile Include="WeatherAPIForm.cs">
       <SubType>Form</SubType>
     </Compile>

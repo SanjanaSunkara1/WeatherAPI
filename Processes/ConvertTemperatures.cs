@@ -1,12 +1,12 @@
-﻿namespace WeatherAPI.Processes
-{
-    public static class ConvertTemperatures
-    {
-        public static double FromKelvinToFahrenheit(string temp)
-        {
-            double t = double.Parse(temp);
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-            return (((t - 273.15) * 9) / 5) + 32;
-        }
+namespace WeatherAPI.Processes
+{
+    internal class ConvertTemperatures
+    {
     }
 }

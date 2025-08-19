@@ -64,6 +64,7 @@
             this.getWeatherXmlBtn.TabIndex = 0;
             this.getWeatherXmlBtn.Text = "Get Weather (XML)";
             this.getWeatherXmlBtn.UseVisualStyleBackColor = false;
+            this.getWeatherXmlBtn.Click += new System.EventHandler(this.getWeatherXmlBtn_Click);
             // 
             // getWeatherJsonBtn
             // 

@@ -43,5 +43,10 @@ namespace WeatherAPI
         {
             this.Close();
         }
+
+        private void getWeatherXmlBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
