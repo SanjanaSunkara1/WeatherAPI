@@ -28,286 +28,307 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.getWeatherXmlBtn = new System.Windows.Forms.Button();
+            this.getWeatherJsonBtn = new System.Windows.Forms.Button();
+            this.zipLabel = new System.Windows.Forms.Label();
             this.txtZipCode = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.cityLabel = new System.Windows.Forms.Label();
+            this.cityTxt = new System.Windows.Forms.TextBox();
+            this.longLabel = new System.Windows.Forms.Label();
+            this.latLabel = new System.Windows.Forms.Label();
+            this.latTxt = new System.Windows.Forms.TextBox();
+            this.longTxt = new System.Windows.Forms.TextBox();
+            this.highLabel = new System.Windows.Forms.Label();
+            this.lowLabel = new System.Windows.Forms.Label();
+            this.tempLabel = new System.Windows.Forms.Label();
+            this.feelsLikeLabel = new System.Windows.Forms.Label();
+            this.tempTxt = new System.Windows.Forms.TextBox();
+            this.feelsikeTxt = new System.Windows.Forms.TextBox();
+            this.highTxt = new System.Windows.Forms.TextBox();
+            this.lowTxt = new System.Windows.Forms.TextBox();
+            this.windLabel = new System.Windows.Forms.Label();
+            this.cloudsLabel = new System.Windows.Forms.Label();
+            this.windTxt = new System.Windows.Forms.TextBox();
+            this.cloudsTxt = new System.Windows.Forms.TextBox();
+            this.closeBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // getWeatherXmlBtn
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(25, 441);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(211, 60);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Get Weather (XML)";
-            this.button1.UseVisualStyleBackColor = false;
+            this.getWeatherXmlBtn.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.getWeatherXmlBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.getWeatherXmlBtn.ForeColor = System.Drawing.Color.White;
+            this.getWeatherXmlBtn.Location = new System.Drawing.Point(25, 441);
+            this.getWeatherXmlBtn.Name = "getWeatherXmlBtn";
+            this.getWeatherXmlBtn.Size = new System.Drawing.Size(211, 60);
+            this.getWeatherXmlBtn.TabIndex = 0;
+            this.getWeatherXmlBtn.Text = "Get Weather (XML)";
+            this.getWeatherXmlBtn.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // getWeatherJsonBtn
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(286, 441);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(195, 60);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Get Weather (JSON)";
-            this.button2.UseVisualStyleBackColor = false;
+            this.getWeatherJsonBtn.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.getWeatherJsonBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.getWeatherJsonBtn.ForeColor = System.Drawing.Color.White;
+            this.getWeatherJsonBtn.Location = new System.Drawing.Point(286, 441);
+            this.getWeatherJsonBtn.Name = "getWeatherJsonBtn";
+            this.getWeatherJsonBtn.Size = new System.Drawing.Size(195, 60);
+            this.getWeatherJsonBtn.TabIndex = 1;
+            this.getWeatherJsonBtn.Text = "Get Weather (JSON)";
+            this.getWeatherJsonBtn.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // zipLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label1.Location = new System.Drawing.Point(21, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(169, 24);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Enter a zip code:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.zipLabel.AutoSize = true;
+            this.zipLabel.BackColor = System.Drawing.Color.Transparent;
+            this.zipLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.zipLabel.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.zipLabel.Location = new System.Drawing.Point(21, 41);
+            this.zipLabel.Name = "zipLabel";
+            this.zipLabel.Size = new System.Drawing.Size(169, 24);
+            this.zipLabel.TabIndex = 2;
+            this.zipLabel.Text = "Enter a zip code:";
+            this.zipLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtZipCode
             // 
+            this.txtZipCode.AcceptsReturn = true;
             this.txtZipCode.Location = new System.Drawing.Point(25, 78);
             this.txtZipCode.Name = "txtZipCode";
             this.txtZipCode.Size = new System.Drawing.Size(243, 20);
             this.txtZipCode.TabIndex = 3;
             // 
-            // label2
+            // cityLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label2.Location = new System.Drawing.Point(21, 114);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 24);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "City";
+            this.cityLabel.AutoSize = true;
+            this.cityLabel.BackColor = System.Drawing.Color.Transparent;
+            this.cityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cityLabel.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.cityLabel.Location = new System.Drawing.Point(21, 114);
+            this.cityLabel.Name = "cityLabel";
+            this.cityLabel.Size = new System.Drawing.Size(44, 24);
+            this.cityLabel.TabIndex = 4;
+            this.cityLabel.Text = "City";
             // 
-            // textBox1
+            // cityTxt
             // 
-            this.textBox1.Location = new System.Drawing.Point(25, 151);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(243, 20);
-            this.textBox1.TabIndex = 5;
+            this.cityTxt.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.cityTxt.Location = new System.Drawing.Point(25, 151);
+            this.cityTxt.Name = "cityTxt";
+            this.cityTxt.ReadOnly = true;
+            this.cityTxt.Size = new System.Drawing.Size(243, 20);
+            this.cityTxt.TabIndex = 5;
             // 
-            // label3
+            // longLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label3.Location = new System.Drawing.Point(247, 196);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(103, 24);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Longitude";
+            this.longLabel.AutoSize = true;
+            this.longLabel.BackColor = System.Drawing.Color.Transparent;
+            this.longLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.longLabel.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.longLabel.Location = new System.Drawing.Point(247, 196);
+            this.longLabel.Name = "longLabel";
+            this.longLabel.Size = new System.Drawing.Size(103, 24);
+            this.longLabel.TabIndex = 6;
+            this.longLabel.Text = "Longitude";
             // 
-            // label4
+            // latLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label4.Location = new System.Drawing.Point(21, 196);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 24);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Latitude";
+            this.latLabel.AutoSize = true;
+            this.latLabel.BackColor = System.Drawing.Color.Transparent;
+            this.latLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.latLabel.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.latLabel.Location = new System.Drawing.Point(21, 196);
+            this.latLabel.Name = "latLabel";
+            this.latLabel.Size = new System.Drawing.Size(83, 24);
+            this.latLabel.TabIndex = 7;
+            this.latLabel.Text = "Latitude";
             // 
-            // textBox3
+            // latTxt
             // 
-            this.textBox3.Location = new System.Drawing.Point(25, 232);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(203, 20);
-            this.textBox3.TabIndex = 9;
+            this.latTxt.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.latTxt.Location = new System.Drawing.Point(25, 232);
+            this.latTxt.Name = "latTxt";
+            this.latTxt.ReadOnly = true;
+            this.latTxt.Size = new System.Drawing.Size(203, 20);
+            this.latTxt.TabIndex = 9;
             // 
-            // textBox2
+            // longTxt
             // 
-            this.textBox2.Location = new System.Drawing.Point(251, 232);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(203, 20);
-            this.textBox2.TabIndex = 10;
+            this.longTxt.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.longTxt.Location = new System.Drawing.Point(251, 232);
+            this.longTxt.Name = "longTxt";
+            this.longTxt.ReadOnly = true;
+            this.longTxt.Size = new System.Drawing.Size(203, 20);
+            this.longTxt.TabIndex = 10;
             // 
-            // label5
+            // highLabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label5.Location = new System.Drawing.Point(269, 278);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 24);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "High";
+            this.highLabel.AutoSize = true;
+            this.highLabel.BackColor = System.Drawing.Color.Transparent;
+            this.highLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.highLabel.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.highLabel.Location = new System.Drawing.Point(269, 278);
+            this.highLabel.Name = "highLabel";
+            this.highLabel.Size = new System.Drawing.Size(54, 24);
+            this.highLabel.TabIndex = 11;
+            this.highLabel.Text = "High";
             // 
-            // label6
+            // lowLabel
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label6.Location = new System.Drawing.Point(167, 278);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 24);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Low";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.lowLabel.AutoSize = true;
+            this.lowLabel.BackColor = System.Drawing.Color.Transparent;
+            this.lowLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lowLabel.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lowLabel.Location = new System.Drawing.Point(167, 278);
+            this.lowLabel.Name = "lowLabel";
+            this.lowLabel.Size = new System.Drawing.Size(48, 24);
+            this.lowLabel.TabIndex = 12;
+            this.lowLabel.Text = "Low";
+            this.lowLabel.Click += new System.EventHandler(this.label6_Click);
             // 
-            // label7
+            // tempLabel
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label7.Location = new System.Drawing.Point(21, 278);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(119, 24);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Temperture";
+            this.tempLabel.AutoSize = true;
+            this.tempLabel.BackColor = System.Drawing.Color.Transparent;
+            this.tempLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tempLabel.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.tempLabel.Location = new System.Drawing.Point(21, 278);
+            this.tempLabel.Name = "tempLabel";
+            this.tempLabel.Size = new System.Drawing.Size(119, 24);
+            this.tempLabel.TabIndex = 13;
+            this.tempLabel.Text = "Temperture";
             // 
-            // label8
+            // feelsLikeLabel
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label8.Location = new System.Drawing.Point(370, 278);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(106, 24);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "Feels Like";
+            this.feelsLikeLabel.AutoSize = true;
+            this.feelsLikeLabel.BackColor = System.Drawing.Color.Transparent;
+            this.feelsLikeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.feelsLikeLabel.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.feelsLikeLabel.Location = new System.Drawing.Point(370, 278);
+            this.feelsLikeLabel.Name = "feelsLikeLabel";
+            this.feelsLikeLabel.Size = new System.Drawing.Size(106, 24);
+            this.feelsLikeLabel.TabIndex = 14;
+            this.feelsLikeLabel.Text = "Feels Like";
             // 
-            // textBox4
+            // tempTxt
             // 
-            this.textBox4.Location = new System.Drawing.Point(25, 314);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(107, 20);
-            this.textBox4.TabIndex = 15;
+            this.tempTxt.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.tempTxt.Location = new System.Drawing.Point(25, 314);
+            this.tempTxt.Name = "tempTxt";
+            this.tempTxt.ReadOnly = true;
+            this.tempTxt.Size = new System.Drawing.Size(107, 20);
+            this.tempTxt.TabIndex = 15;
             // 
-            // textBox5
+            // feelsikeTxt
             // 
-            this.textBox5.Location = new System.Drawing.Point(374, 314);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(107, 20);
-            this.textBox5.TabIndex = 16;
+            this.feelsikeTxt.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.feelsikeTxt.Location = new System.Drawing.Point(374, 314);
+            this.feelsikeTxt.Name = "feelsikeTxt";
+            this.feelsikeTxt.ReadOnly = true;
+            this.feelsikeTxt.Size = new System.Drawing.Size(107, 20);
+            this.feelsikeTxt.TabIndex = 16;
             // 
-            // textBox6
+            // highTxt
             // 
-            this.textBox6.Location = new System.Drawing.Point(273, 314);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(77, 20);
-            this.textBox6.TabIndex = 17;
+            this.highTxt.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.highTxt.Location = new System.Drawing.Point(273, 314);
+            this.highTxt.Name = "highTxt";
+            this.highTxt.ReadOnly = true;
+            this.highTxt.Size = new System.Drawing.Size(77, 20);
+            this.highTxt.TabIndex = 17;
             // 
-            // textBox7
+            // lowTxt
             // 
-            this.textBox7.Location = new System.Drawing.Point(171, 314);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(74, 20);
-            this.textBox7.TabIndex = 18;
+            this.lowTxt.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lowTxt.Location = new System.Drawing.Point(171, 314);
+            this.lowTxt.Name = "lowTxt";
+            this.lowTxt.ReadOnly = true;
+            this.lowTxt.Size = new System.Drawing.Size(74, 20);
+            this.lowTxt.TabIndex = 18;
             // 
-            // label9
+            // windLabel
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label9.Location = new System.Drawing.Point(21, 358);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(58, 24);
-            this.label9.TabIndex = 19;
-            this.label9.Text = "Wind";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
+            this.windLabel.AutoSize = true;
+            this.windLabel.BackColor = System.Drawing.Color.Transparent;
+            this.windLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.windLabel.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.windLabel.Location = new System.Drawing.Point(21, 358);
+            this.windLabel.Name = "windLabel";
+            this.windLabel.Size = new System.Drawing.Size(58, 24);
+            this.windLabel.TabIndex = 19;
+            this.windLabel.Text = "Wind";
+            this.windLabel.Click += new System.EventHandler(this.label9_Click);
             // 
-            // label10
+            // cloudsLabel
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label10.Location = new System.Drawing.Point(247, 358);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(75, 24);
-            this.label10.TabIndex = 20;
-            this.label10.Text = "Clouds";
+            this.cloudsLabel.AutoSize = true;
+            this.cloudsLabel.BackColor = System.Drawing.Color.Transparent;
+            this.cloudsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cloudsLabel.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.cloudsLabel.Location = new System.Drawing.Point(247, 358);
+            this.cloudsLabel.Name = "cloudsLabel";
+            this.cloudsLabel.Size = new System.Drawing.Size(75, 24);
+            this.cloudsLabel.TabIndex = 20;
+            this.cloudsLabel.Text = "Clouds";
             // 
-            // textBox8
+            // windTxt
             // 
-            this.textBox8.Location = new System.Drawing.Point(25, 396);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(203, 20);
-            this.textBox8.TabIndex = 21;
+            this.windTxt.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.windTxt.Location = new System.Drawing.Point(25, 396);
+            this.windTxt.Name = "windTxt";
+            this.windTxt.ReadOnly = true;
+            this.windTxt.Size = new System.Drawing.Size(203, 20);
+            this.windTxt.TabIndex = 21;
             // 
-            // textBox9
+            // cloudsTxt
             // 
-            this.textBox9.Location = new System.Drawing.Point(251, 396);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(203, 20);
-            this.textBox9.TabIndex = 22;
+            this.cloudsTxt.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.cloudsTxt.Location = new System.Drawing.Point(251, 396);
+            this.cloudsTxt.Name = "cloudsTxt";
+            this.cloudsTxt.ReadOnly = true;
+            this.cloudsTxt.Size = new System.Drawing.Size(203, 20);
+            this.cloudsTxt.TabIndex = 22;
             // 
-            // button3
+            // closeBtn
             // 
-            this.button3.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.button3.Location = new System.Drawing.Point(401, 544);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(98, 41);
-            this.button3.TabIndex = 23;
-            this.button3.Text = "close";
-            this.button3.UseVisualStyleBackColor = true;
+            this.closeBtn.BackColor = System.Drawing.Color.Snow;
+            this.closeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.closeBtn.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.closeBtn.Location = new System.Drawing.Point(401, 544);
+            this.closeBtn.Name = "closeBtn";
+            this.closeBtn.Size = new System.Drawing.Size(98, 41);
+            this.closeBtn.TabIndex = 23;
+            this.closeBtn.Text = "close";
+            this.closeBtn.UseVisualStyleBackColor = false;
             // 
             // frmWeatherAPI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(511, 597);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.closeBtn);
+            this.Controls.Add(this.cloudsTxt);
+            this.Controls.Add(this.windTxt);
+            this.Controls.Add(this.cloudsLabel);
+            this.Controls.Add(this.windLabel);
+            this.Controls.Add(this.lowTxt);
+            this.Controls.Add(this.highTxt);
+            this.Controls.Add(this.feelsikeTxt);
+            this.Controls.Add(this.tempTxt);
+            this.Controls.Add(this.feelsLikeLabel);
+            this.Controls.Add(this.tempLabel);
+            this.Controls.Add(this.lowLabel);
+            this.Controls.Add(this.highLabel);
+            this.Controls.Add(this.longTxt);
+            this.Controls.Add(this.latTxt);
+            this.Controls.Add(this.latLabel);
+            this.Controls.Add(this.longLabel);
+            this.Controls.Add(this.cityTxt);
+            this.Controls.Add(this.cityLabel);
             this.Controls.Add(this.txtZipCode);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.zipLabel);
+            this.Controls.Add(this.getWeatherJsonBtn);
+            this.Controls.Add(this.getWeatherXmlBtn);
             this.Name = "frmWeatherAPI";
             this.Text = "frmWeatherAPI";
             this.ResumeLayout(false);
@@ -317,28 +338,28 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button getWeatherXmlBtn;
+        private System.Windows.Forms.Button getWeatherJsonBtn;
+        private System.Windows.Forms.Label zipLabel;
         private System.Windows.Forms.TextBox txtZipCode;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label cityLabel;
+        private System.Windows.Forms.TextBox cityTxt;
+        private System.Windows.Forms.Label longLabel;
+        private System.Windows.Forms.Label latLabel;
+        private System.Windows.Forms.TextBox latTxt;
+        private System.Windows.Forms.TextBox longTxt;
+        private System.Windows.Forms.Label highLabel;
+        private System.Windows.Forms.Label lowLabel;
+        private System.Windows.Forms.Label tempLabel;
+        private System.Windows.Forms.Label feelsLikeLabel;
+        private System.Windows.Forms.TextBox tempTxt;
+        private System.Windows.Forms.TextBox feelsikeTxt;
+        private System.Windows.Forms.TextBox highTxt;
+        private System.Windows.Forms.TextBox lowTxt;
+        private System.Windows.Forms.Label windLabel;
+        private System.Windows.Forms.Label cloudsLabel;
+        private System.Windows.Forms.TextBox windTxt;
+        private System.Windows.Forms.TextBox cloudsTxt;
+        private System.Windows.Forms.Button closeBtn;
     }
 }
