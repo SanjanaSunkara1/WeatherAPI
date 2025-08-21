@@ -52,6 +52,7 @@
     <Compile Include="Processes\ParseWeatherDataXML.cs" />
     <Compile Include="Processes\ParseWeatherDataJSON.cs" />
     <Compile Include="Processes\ConvertTemperatures.cs" />
+    <Compile Include="Services\WeatherService.cs" />
     <Compile Include="WeatherAPIForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,8 +86,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
