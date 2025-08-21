@@ -14,8 +14,8 @@ namespace WeatherAPI
 {
     public partial class frmWeatherAPI : Form
     {
-
         List<Weather> weather;
+
         public frmWeatherAPI()
         {
             InitializeComponent();
